@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REBECCA MINKOFF</title>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="slider.js"></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <!-- announcment -->
+  <div class="announcment">
+    <a href="">SIGN UP FOR <span style="text-decoration: underline;">RM REWARDS</span> AND EARN POINTS ON EVERY
+      PURCHASE.</a>
+  </div>
+  <!-- navbar -->
+  <div class="navbar">
+    <button class="menuitem"><i class="fa-solid fa-bars fa-xl"></i></button>
+    <a href="" class="logo">REBECCA MINKOFF</a>
+    <button class="menuitem2 "><i class="fa-solid fa-cart-shopping fa-xl"></i></button>
+    <div class="navlinks">
+      <a href="" class="link1">NEW NOW</a>
+      <a href="" class="link2">HANDBAGS</a>
+      <a href="" class="link3">CLOTHINGS</a>
+      <a href="" class="link4">SHOES</a></li>
+      <a href="" class="link5">ACCESSORIES</a>
+      <a href="">FRAGRANCE</a>
+      <a href="">HOME</a>
+      <a href="">SALE</a>
+      <a href="">OUR STORY</a>
+    </div>
+    <diiv class="bttn" style="display: flex; flex-direction: row;gap: 20px;">
+      <div><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-search" viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+          </svg></button>
+      </div>
+      <div>
+        <button class="currency" style="font-size: 14px; font-weight: bold;"><span class="cur">IN/₹</span></button>
+      </div>
+      <div> <button class="user"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+          </svg></button>
+      </div>
+    </diiv>
+  </div>
+  <!-- dropdowncurrency IN/₹-->
+  <div class="dorpdowncurr">
+    <span style="font-weight: bold;">CHOOSE COUNTRY & CURRENCY</span>
+    <p style="font-size: 14px; margin-top: 30px;">We are working with our partner Global E to offer you the best
+      possible international shopping experience. Please
+      select the country you would like to ship to and your currency below.</p>
+
+    <select class="currencySelector">
+      <option value="USD">United States Dollar (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="GBP">British Pound Sterling (GBP)</option>
+      <option value="AUD">Australian Dollar (AUD)</option>
+      <option value="CAD">Canadian Dollar (CAD)</option>
+      <option value="JPY">Japanese Yen (JPY)</option>
+      <option value="CHF">Swiss Franc (CHF)</option>
+      <option value="CNY">Chinese Yuan (CNY)</option>
+      <option value="INR">Indian Rupee (INR)</option>
+      <option value="RUB">Russian Ruble (RUB)</option>
+      <option value="BRL">Brazilian Real (BRL)</option>
+      <option value="KRW">South Korean Won (KRW)</option>
+      <option value="MXN">Mexican Peso (MXN)</option>
+      <option value="TRY">Turkish Lira (TRY)</option>
+      <option value="NZD">New Zealand Dollar (NZD)</option>
+      <option value="SGD">Singapore Dollar (SGD)</option>
+      <option value="HKD">Hong Kong Dollar (HKD)</option>
+      <option value="SEK">Swedish Krona (SEK)</option>
+      <option value="NOK">Norwegian Krone (NOK)</option>
+      <option value="DKK">Danish Krone (DKK)</option>
+      <option value="ZAR">South African Rand (ZAR)</option>
+      <option value="THB">Thai Baht (THB)</option>
+      <option value="IDR">Indonesian Rupiah (IDR)</option>
+    </select>
+    <button class="currencybtn">OK</button>
+  </div>
+  <!-- dropdown user-->
+  <div class="dropdownuser">
+    <span>MY ACCOUNT</span>
+
+    <div class="btns">
+      <button class="loginbt">LOGIN</button>
+      <button class="create">CREATE ACCOUNT</button>
+    </div>
+
+    <div class="userformlogin">
+      <input type="text" placeholder="Email address" style="margin-bottom: 30px;">
+      <input type="password" placeholder="Password">
+      <button class="loginuser">LOGIN</button>
+    </div>
+    <div class="userformsignup">
+      <input type="text" placeholder="First Name" style="margin-bottom: 30px;">
+      <input type="text" placeholder="Last Name" style="margin-bottom: 30px;">
+      <input type="text" placeholder="Email address" style="margin-bottom: 30px;">
+      <input type="password" placeholder="Password">
+      <button class="loginuser">CREATE ACCOUNT</button>
+    </div>
+
+  </div>
+  <!-- dropdown -->
+  <div class="dp1">
+    <div class="dropdown1" style="padding-top: 10px; padding-bottom: 10px;">
+      <div class="newnow" style="margin-bottom: 40px ;">
+        <p style="margin-bottom: 10px;font-weight: bold">NEW NOW</p>
+        <li><a href="">Hand Bags</a></li>
+        <li><a href="">Accessories</a></li>
+        <li><a href="">Shoes</a></li>
+        <li><a href="">Clothings</a></li>
+        <li><a href="">Shop All</a></li>
+
+      </div>
+      <div class="COLLECTIONS">
+        <p style="margin-bottom: 10px;font-weight: bold">COLLECTIONS</p>
+        <li><a href="">Best sellers</a></li>
+        <li><a href="">The Downtown edits</a></li>
+        <li><a href="">Celestial Studs</a></li>
+        <li><a href="">Sueds style</a></li>
+        <li><a href="">Rebecca's Picks</a></li>
+        <li><a href="">Online Exclusive</a></li>
+      </div>
+      <div style="display: flex;align-items: center;justify-content: center;">
+        <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
+   font-size: 30px;">SPRING ESSENTIALS</a>
+        <img src="dpd1.jpeg" alt="" style="width: 400px; height: 330px;">
+      </div>
+      <div style="display: flex;align-items: center;justify-content: center; text-align: center;">
+        <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
+   font-size: 30px;">FRESH SPRING <br> FITS</a>
+        <img src="1.jpg" alt="" style="width: 300px; height: 330px;">
+      </div>
+
+    </div>
+  </div>
+  <!-- dropdown2 -->
+  <div class="dp2">
+    <div class="dropdown1" style="padding-top: 10px; padding-bottom: 10px;">
+      <div class="newnow" style="margin-bottom: 40px ;">
+        <p style="margin-bottom: 10px;font-weight: bold">HANDBAGS</p>
+        <li><a href="">New Arrivals</a></li>
+        <li><a href="">Top HAndle Bags</a></li>
+        <li><a href="">Crossbody Bags</a></li>
+        <li><a href="">Tate Bags</a></li>
+        <li><a href="">Backpacks</a></li>
+        <li><a href="">Shoulder Bags</a></li>
+        <li><a href="">Hobo Bags</a></li>
+        <li><a href="">Clutches</a></li>
+        <li><a href="">Shop All</a></li>
+
+
+
+      </div>
+      <div class="COLLECTIONS">
+        <p style="margin-bottom: 10px;font-weight: bold">COLLECTIONS</p>
+        <li><a href="">Best sellers</a></li>
+        <li><a href="">The Downtown edits</a></li>
+        <li><a href="">Celestial Studs</a></li>
+        <li><a href="">Sueds style</a></li>
+        <li><a href="">Rebecca's Picks</a></li>
+        <li><a href="">Online Exclusive</a></li>
+      </div>
+      <div style="display: flex;align-items: center;justify-content: center;">
+        <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
+      font-size: 30px;">NOW TRENDING: SURPLUS</a>
+        <img src="DPD21.jpeg" alt="" style="width: 500px; height: 330px;">
+      </div>
+      <div style="display: flex;align-items: center;justify-content: center; text-align: center;">
+        <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
+      font-size: 30px;">WEEKEND GETAWAY</a>
+        <img src="b2.jpeg" alt="" style="width: 500px; height: 330px;">
+      </div>
+
+    </div>
+  </div>
+  <!-- dropdown3 -->
+  <div class="dp3">
+    <div class="dropdown3" style="padding-top: 10px; padding-bottom: 10px;">
+      <div class="newnow" style="margin-bottom: 40px ;">
+        <p style="margin-bottom: 10px;font-weight: bold">CLOTHINGS</p>
+        <li><a href="">Tops</a></li>
+        <li><a href="">Bottoms</a></li>
+        <li><a href="">Dresses</a></li>
+        <li><a href="">Leather</a></li>
+        <li><a href="">Outerwear</a></li>
+        <li><a href="">Shop All</a></li>
+
+
+
+
+      </div>
+      <div class="COLLECTIONS">
+        <p style="margin-bottom: 10px;font-weight: bold">COLLECTIONS</p>
+        <li><a href="">New Arrivals</a></li>
+        <li><a href="">Sustainable Made</a></li>
+        <li><a href="">sale</a></li>
+      </div>
+      <div style="display: flex;align-items: center;justify-content: center; text-align: center;">
+        <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
+      font-size: 30px;">WEEKEND GETAWAY</a>
+        <img src="1.jpg" alt="" style="width: 400px; height: 330px;">
+      </div>
+
+    </div>
+  </div>
+  <!-- dropdown4 -->
+  <div class="dp4">
+    <div class="dropdown1" style="padding-top: 10px; padding-bottom: 10px;">
+      <div class="COLLECTIONS">
+        <p style="margin-bottom: 10px;font-weight: bold">SHOES</p>
+        <li><a href="">New Arrivals</a></li>
+        <li><a href="">Shop All</a></li>
+        <li><a href="">Sale</a></li>
+
+      </div>
+      <div style="display: flex;align-items: center;justify-content: center;">
+        <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
+   font-size: 30px;">SHOP SHOES</a>
+        <img src="3.jpg" alt="" style="width: 400px; height: 330px;">
+      </div>
+
+
+    </div>
+  </div>
+  <!-- dropdown5 -->
+  <div class="dp5">
+    <div class="dropdown1" style="padding-top: 10px; padding-bottom: 10px;">
+      <div class="" style="margin-bottom: 40px ;">
+
+      </div>
+      <div class="COLLECTIONS">
+        <p style="margin-bottom: 10px; font-weight: bold;">COLLECTIONS</p>
+        <li><a href="">New Arrivals</a></li>
+        <li><a href="">Jewelery</a></li>
+        <li><a href="">Wallets</a></li>
+        <li><a href=""> Shop All</a></li>
+
+      </div>
+      <div style="display: flex;align-items: center;justify-content: center;">
+        <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
+   font-size: 30px;">JEWELERY</a>
+        <img src="j.jpeg" alt="" style="width: 300px; height: 330px;">
+      </div>
+      <div style="display: flex;align-items: center;justify-content: center; text-align: center;">
+        <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
+   font-size: 30px;">NEW WALLETS </a>
+        <img src="2.jpg" alt="" style="width: 500px; height: 330px;">
+      </div>
+
+    </div>
+  </div>
+  <!-- banner -->
+  <div class="banner">
+
+    <div class="video3">
+      <div class="a2">
+        <a href="" class="linkvideosm">THE SPRING 2024 COLLECTIONS</a>
+        <a href="" class="linkvideosm2">SHOP NOW</a>
+      </div>
+      <video class="mbvideo" autoplay loop muted style="position: relative;">
+        <source src="mo.mp4">
+      </video>
+    </div>
+
+    <div class="video2">
+      <div class="a1">
+        <a href="" class="linkvideosm">THE SPRING 2024 COLLECTIONS</a>
+        <a href="" class="linkvideosm2">SHOP NOW</a>
+      </div>
+      <video class="smvideo" autoplay loop muted style="position: relative;">
+        <source src="edt (1).mp4">
+      </video>
+    </div>
+
+    <div class="video">
+      <!-- <div class="txt"><a href="" class="linkvideo">THE SPRING 2024 COLLECTIONS</a> -->
+      <video autoplay loop muted >
+        <source src="rebecca minkof.mp4">
+      </video>
+    </div>
+  </div>
+
+
+  <!-- banner1 -->
+  <div class="collections" >
+    <div class="col"><a href="" class="linkcol">CLOTHING</a>
+      <img src="1.jpg" alt="" class="collimg">
+    </div>
+
+    <div class="col"><a href="" class="linkcol">HANDBAGS</a>
+      <img src="2.jpg" alt="" class="collimg">
+    </div>
+
+    <div class="col"><a href="" class="linkcol">SHOES</a>
+      <img src="3.jpg" alt="" class="collimg">
+    </div>
+  </div>
+  <!-- banner1 collections slider -->
+  <div class="collections-slider" >
+    <div class="slider-col"><a href="" class="linkcolslider">CLOTHING</a>
+      <img src="1.jpg" alt="" class="collimg">
+    </div>
+
+    <div class="slider-col"><a href="" class="linkcolslider">HANDBAGS</a>
+      <img src="2.jpg" alt="" class="collimg">
+    </div>
+
+    <div class="slider-col"><a href="" class="linkcolslider">SHOES</a>
+      <img src="3.jpg" alt="" class="collimg">
+    </div>
+  </div>
+  <!-- banner2 -->
+  <div class="banner2">
+    <div class="b2txt1">
+      <a href="">WEEKEND GETAWAY</a>
+    </div>
+    <div class="b2txt2">
+      <a href="" style="color: white; font-size: 16px; text-decoration: none;">Explore weekwnders and totes perfect for
+        your next trip </a>
+    </div>
+    <div>
+      <button>
+        SHOP NOW
+      </button>
+    </div>
+  </div>
+  <!-- banner3 -->
+  <div class="banner3">
+    <div class="b3txt1">
+      <a href="">SPRING ESSENTIALS</a>
+    </div>
+    <div>
+      <button>
+        SHOP NOW
+      </button>
+    </div>
+  </div>
+  <!-- footer -->
+  <!-- <footer>
+    <div class="ftr">
+      <div class="firstsection">
+        <div class="first" style="display: flex;flex-direction: column;text-align: left;">
+          <div style=" font-size: 30px;"><a href="" style="color: white; text-decoration: none; ">REBECCA MINKOFF</a>
+          </div>
+          <div><a href="" class="atag">Sign up for emails & 15%0ff <i class="fa-solid fa-angle-right"></i></a></div>
+        </div>
+      </div>
+      <div class="secondsection">
+        <div class="second" style="display: flex;flex-direction: column;  text-align: left;">
+          <a href="" class="atag" style="font-weight: bold;">THE COMPANY</a>
+          <a href="" class="atag"> Our styory</a>
+        </div>
+        <div class="third" style="display: flex;flex-direction: column; text-align: left;padding-top: 42px; ">
+          <a href="" class="atag" style="font-weight: bold;">JOIN RM</a>
+          <a href="" class="atag"> Text us</a>
+          <a href="" class="atag">RM Rewards</a>
+          <a href="" class="atag">Gift cards</a>
+        </div>
+        <div class="forth" style="display: flex;flex-direction: column; text-align: left;padding-top: 72px; ">
+          <a href="" class="atag" style="font-weight: bold;">CUSTOMER CARE</a>
+          <a href="" class="atag"> Shipping</a>
+          <a href="" class="atag">Return & Exchanges</a>
+          <a href="" class="atag">Contact us</a>
+          <a href="" class="atag">FAQ</a>
+        </div>
+        <div class="fifth" style="display: flex;flex-direction: column; text-align: left;padding-top: 45px; ">
+          <a href="" class="atag" style="font-weight: bold;">LEGAL</a>
+          <a href="" class="atag"> Privacy policy</a>
+          <a href="" class="atag">Supply chain disclosure</a>
+          <a href="" class="atag">Terms & conditions</a>
+        </div>
+      </div>
+       -->
+    <!-- </div> -->
+  <!-- </footer>  -->
+  <script>
+    $(document).ready(function () {
+      $('.link1').mouseover(function () {
+        $('.dp1').slideDown("slow");
+      })
+      $('.link1').mouseleave(function () {
+        $('.dp1').slideUp("");
+      })
+    })
+    $(document).ready(function () {
+      $('.link2').mouseover(function () {
+        $('.dp2').slideDown("slow");
+      })
+      $('.link2').mouseleave(function () {
+        $('.dp2').slideUp("slow");
+      })
+    })
+
+    $(document).ready(function () {
+      $('.link3').mouseover(function () {
+        $('.dp3').slideDown("slow");
+      })
+      $('.link3').mouseleave(function () {
+        $('.dp3').slideUp();
+      })
+    })
+
+    $(document).ready(function () {
+      $('.link4').mouseover(function () {
+        $('.dp4').slideDown("slow");
+      })
+      $('.link4').mouseleave(function () {
+        $('.dp4').slideUp();
+      })
+    })
+    $(document).ready(function () {
+      $('.link5').mouseover(function () {
+        $('.dp5').slideDown("slow");
+      })
+      $('.link5').mouseleave(function () {
+        $('.dp5').slideUp();
+      })
+    })
+    $(document).ready(function () {
+      $('.currency').click(function () {
+        $('.dorpdowncurr').slideToggle("");
+      })
+
+    })
+    $(document).ready(function () {
+      $('.user').click(function () {
+        $('.dropdownuser').slideToggle("");
+      })
+
+    })
+    $(document).ready(function () {
+      $('.create').click(function () {
+        $('.userformlogin').slideUp("");
+        $('.userformsignup').show("");
+      })
+
+    })
+    $(document).ready(function () {
+      $('.loginbt').click(function () {
+        $('.userformsignup').hide("");
+        $('.userformlogin').show("");
+      })
+
+    })
+  </script>
+</body>
+</html>

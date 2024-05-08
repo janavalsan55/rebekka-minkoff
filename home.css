@@ -1,0 +1,182 @@
+.announcment {
+    width: 100%;
+}
+
+
+.navbar .logo {
+    margin: 0;
+}
+
+.video2{
+    display: none;
+}
+
+.vedio3 {
+    display: block;
+}
+
+.banner {
+    max-width: 100%;
+    max-height: 70vh;
+}
+
+.video3 {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.mbvideo {
+    max-width: 100%;
+    max-height: 100%;
+    z-index: -1;
+
+}
+
+.a2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.a1 {
+    display: none;
+}
+
+.linkvideosm {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.linkvideosm2 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.col {
+    width: 90%;
+}
+
+.collimg {
+    height: 490px;
+    width: 416px;
+    z-index: -1;
+}
+
+.banner2 {
+    max-width: 100%;
+    height: 600px;
+}
+
+.banner2 {
+    width: 100%;
+    height: 78vh;
+    background-image: url(file.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.b2txt1 a {
+    font-size: 30px;
+}
+
+.banner3 {
+    width: 100%;
+    height: 78vh;
+    background-image: url(banner3mb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.b3txt1 a {
+    font-size: 30px;
+    color: white;
+}
+footer {
+  max-width: 100%;
+  height: 70vh;
+}
+
+.ftr {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 0;
+}
+
+.firstsection {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.secondsection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.collections{
+  display: none;
+}
+.collections-slider{
+  display: block;
+}
+.collections-slider {
+  display: flex;
+  flex-direction: row;
+  row-gap: 0;
+
+}
+.slider-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.collimg {
+  height: 400px;
+  width: 416px;
+  z-index: -1;
+}
+
+.collimg {
+  position: relative;
+}
+
+.linkcolslider {
+  position: absolute;
+}
+
+.linkcolslider {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+}
