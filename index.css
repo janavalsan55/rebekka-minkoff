@@ -679,45 +679,4 @@
     .collections{
         display: none;
       }
-      .collections-slider{
-        display: block;
-      }
-      .collections-slider {
-        display: flex;
-        flex-direction: row;
-        row-gap: 0;
-      
-      }
-      .slider-col {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* width: 345px;
-        height: 345px; */
-      }
-      .collimg {
-        /* width: 345px;
-        height: 345px; */
-        position: relative;
-      }
-      
-      .linkcolslider {
-        position: absolute;
-      }
-      .linkcolslider {
-        text-decoration: none;
-        color: white;
-        font-weight: 500;
-        font-size: 30px;
-      } 
-      .slick-track .slick-slide {
-        display: flex;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-      }
-      .slick-slide{
-        width: 345px;
-        height: 345px;
-      }
   }

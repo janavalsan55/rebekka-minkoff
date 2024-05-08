@@ -11,10 +11,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="slider.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="slider.js"></script>
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -94,7 +95,6 @@
   <!-- dropdown user-->
   <div class="dropdownuser">
     <span>MY ACCOUNT</span>
-
     <div class="btns">
       <button class="loginbt">LOGIN</button>
       <button class="create">CREATE ACCOUNT</button>
@@ -112,7 +112,6 @@
       <input type="password" placeholder="Password">
       <button class="loginuser">CREATE ACCOUNT</button>
     </div>
-
   </div>
   <!-- dropdown -->
   <div class="dp1">
@@ -273,7 +272,7 @@
         <a href="" class="linkvideosm2">SHOP NOW</a>
       </div>
       <video class="mbvideo" autoplay loop muted style="position: relative;">
-        <source src="mo.mp4">
+        <source src="mobile.mp4">
       </video>
     </div>
 
@@ -289,15 +288,13 @@
 
     <div class="video">
       <!-- <div class="txt"><a href="" class="linkvideo">THE SPRING 2024 COLLECTIONS</a> -->
-      <video autoplay loop muted >
+      <video autoplay loop muted>
         <source src="rebecca minkof.mp4">
       </video>
     </div>
   </div>
-
-
   <!-- banner1 -->
-  <div class="collections" >
+  <div class="collections">
     <div class="col"><a href="" class="linkcol">CLOTHING</a>
       <img src="1.jpg" alt="" class="collimg">
     </div>
@@ -311,7 +308,7 @@
     </div>
   </div>
   <!-- banner1 collections slider -->
-  <div class="collections-slider" >
+  <div class="collections-slider">
     <div class="slider-col"><a href="" class="linkcolslider">CLOTHING</a>
       <img src="1.jpg" alt="" class="collimg">
     </div>
@@ -386,7 +383,7 @@
         </div>
       </div>
        -->
-    <!-- </div> -->
+  <!-- </div> -->
   <!-- </footer>  -->
   <script>
     $(document).ready(function () {
@@ -396,67 +393,46 @@
       $('.link1').mouseleave(function () {
         $('.dp1').slideUp("");
       })
-    })
-    $(document).ready(function () {
       $('.link2').mouseover(function () {
         $('.dp2').slideDown("slow");
       })
       $('.link2').mouseleave(function () {
         $('.dp2').slideUp("slow");
       })
-    })
-
-    $(document).ready(function () {
       $('.link3').mouseover(function () {
         $('.dp3').slideDown("slow");
       })
       $('.link3').mouseleave(function () {
         $('.dp3').slideUp();
       })
-    })
-
-    $(document).ready(function () {
       $('.link4').mouseover(function () {
         $('.dp4').slideDown("slow");
       })
       $('.link4').mouseleave(function () {
         $('.dp4').slideUp();
       })
-    })
-    $(document).ready(function () {
       $('.link5').mouseover(function () {
         $('.dp5').slideDown("slow");
       })
       $('.link5').mouseleave(function () {
         $('.dp5').slideUp();
       })
-    })
-    $(document).ready(function () {
       $('.currency').click(function () {
         $('.dorpdowncurr').slideToggle("");
       })
-
-    })
-    $(document).ready(function () {
       $('.user').click(function () {
         $('.dropdownuser').slideToggle("");
       })
-
-    })
-    $(document).ready(function () {
       $('.create').click(function () {
         $('.userformlogin').slideUp("");
         $('.userformsignup').show("");
       })
-
-    })
-    $(document).ready(function () {
       $('.loginbt').click(function () {
         $('.userformsignup').hide("");
         $('.userformlogin').show("");
       })
-
     })
   </script>
 </body>
+
 </html>
