@@ -23,6 +23,9 @@
   .collections-slider{
     display: none;
   }
+  .drop{
+    display: none;
+  }
 
   .announcment {
       background-color: black;
@@ -52,7 +55,6 @@
       position: sticky;
       top: 0;
   }
-
   .logo {
       color: black;
       text-decoration: none;
@@ -512,36 +514,43 @@
           max-width: 100%;
           height: 750px;
       }
+      /* .drop{
+        display: block;
+      } */
+      .drop{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        position: absolute;
+        height: 95vh;
+        display: none;
+        background-color: aqua;
+        z-index: 1;
+        
 
-      footer {
-          width: 100%;
-          height: 480px;
+
+        
       }
-
-      .ftr {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          align-items: center;
-          text-align: center;
-          gap: 0;
+      .navlinksdrop{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
+      .navlinksdrop a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+  
+    .bttndrop button {
+        background: transparent;
+        border: none;
+    }
+  
 
-      .firstsection {
-          display: flex;
-          justify-content: center;
-          text-align: center;
-          align-items: center;
-
-      }
-
-      .secondsection {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          text-align: center;
-      }
 
   }
 
@@ -696,4 +705,38 @@
         align-items: center;
         justify-content: center;
       }
+      .drop{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        height: 95vh;
+        display: none;
+        background-color: aqua;
+        z-index: 1;
+        
+
+
+        
+      }
+      .navlinksdrop{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .navlinksdrop a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+  
+    .bttndrop button {
+        background: transparent;
+        border: none;
+    }
+  
+
   }
