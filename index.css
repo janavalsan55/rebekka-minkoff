@@ -565,7 +565,7 @@
     
     .banner {
         max-width: 100%;
-        max-height: 600px;
+        max-height: 592px;
     }
     
     .video3 {
@@ -615,7 +615,7 @@
     .banner2 {
         width: 100%;
         height: 75vh;
-        background-image: url(file.jpg);
+        background-image: url(qfie.png);
         background-size: cover;
         display: flex;
         flex-direction: column;
