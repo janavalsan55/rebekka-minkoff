@@ -29,7 +29,6 @@
 
   <div class="navbar">
     <button class="menuitem" ><i class="fa-solid fa-bars fa-xl"></i></button>
-    <button class=" menucross"><i class="fa-solid fa-x fa-xl"></i></button>
     <a href="" class="logo">REBECCA MINKOFF</a>
     <button class="menuitem2 "><i class="fa-solid fa-cart-shopping fa-xl"></i></button>
 
@@ -168,12 +167,12 @@
       <div style="display: flex;align-items: center;justify-content: center;">
         <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
    font-size: 30px;">SPRING ESSENTIALS</a>
-        <img class="smalcrn-sizes1" src="dpd1.jpeg" alt="">
+        <img class="smalcrn-sizes1" src="dpd1.jpeg" alt="" style="width: 400px; height: 330px;">
       </div>
       <div style="display: flex;align-items: center;justify-content: center; text-align: center;">
         <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
    font-size: 30px;">FRESH SPRING <br> FITS</a>
-        <img class="smalcrn-sizes1" src="1.jpg" alt="">
+        <img class="smalcrn-sizes1" src="1.jpg" alt="" style="width: 300px; height: 330px;">
       </div>
 
     </div>
@@ -380,86 +379,55 @@
     </div>
   </div>
   <!-- footer -->
+  <footer>
+  <div class="container ftr">
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 rpw cols-lg-5 row-cols-xl-5 row-cols-xxl-5">
+      <div class="col-12">
+        <div class="first">
+        <a href="" style="color: white; text-decoration: none; font-size: 20px; letter-spacing: 2px; ">REBECCA MINKOFF</a>
+        
+          <a href="" class="atag" style="margin-top: 10px;" >
+            Sign up for emails & 15%0ff <i class="fa-solid fa-angle-right"></i></a>
+          
+        </div>
+    </div>
+      <div class="col">
+          <div class="sections">
+            <a href="" class="atag" style="font-weight: bold;">THE COMPANY</a>
+            <a href="" class="atag"> Our styory</a>
+          </div>
+      </div>
+      <div class="col">
+        <div class="sections">
+          <a href="" class="atag" style="font-weight: bold;">JOIN RM</a>
+          <a href="" class="atag"> Text us</a>
+          <a href="" class="atag">RM Rewards</a>
+          <a href="" class="atag">Gift cards</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="sections">
+          <a href="" class="atag" style="font-weight: bold;">CUSTOMER CARE</a>
+          <a href="" class="atag"> Shipping</a>
+          <a href="" class="atag">Return & Exchanges</a>
+          <a href="" class="atag">Contact us</a>
+          <a href="" class="atag">FAQ</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="sections">
+          <a href="" class="atag" style="font-weight: bold;">LEGAL</a>
+          <a href="" class="atag"> Privacy policy</a>
+          <a href="" class="atag">Supply chain disclosure</a>
+          <a href="" class="atag">Terms & conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
   <script>
     $(document).ready(function () {
-      $('.link1').mouseover(function () {
-        $('.dp1').slideDown("slow");
-      })
-      $('.link1').mouseleave(function () {
-        $('.dp1').slideUp("");
-      })
-      $('.link2').mouseover(function () {
-        $('.dp2').slideDown("slow");
-      })
-      $('.link2').mouseleave(function () {
-        $('.dp2').slideUp("slow");
-      })
-      $('.link3').mouseover(function () {
-        $('.dp3').slideDown("slow");
-      })
-      $('.link3').mouseleave(function () {
-        $('.dp3').slideUp();
-      })
-      $('.link4').mouseover(function () {
-        $('.dp4').slideDown("slow");
-      })
-      $('.link4').mouseleave(function () {
-        $('.dp4').slideUp();
-      })
-      $('.link5').mouseover(function () {
-        $('.dp5').slideDown("slow");
-      })
-      $('.link5').mouseleave(function () {
-        $('.dp5').slideUp();
-      })
-      $('.currency').click(function () {
-        $('.dorpdowncurr').slideToggle("");
-      })
-      $('.user').click(function () {
-        $('.dropdownuser').slideToggle("");
-      })
-      $('.create').click(function () {
-        $('.userformlogin').hide("");
-        $('.userformsignup').show("");
-      })
-      $('.loginbt').click(function () {
-        $('.userformsignup').hide("");
-        $('.userformlogin').show("");
-      })
-      $(".menuitem").click(function () {
-        var div = $('.drop');
-        div.animate({ width: 'toggle' }, "100");
-      })
-      $(".menuitem").click(function () {
-    $('.menuitem').hide('');
-    $('.menucross').show('');
-    var div = $('.drop');
-    div.animate({ left: '0px' }, "100");
-});
-    
-$(".menucross").click(function () {
-    $('.menucross').hide('');
-    $('.menuitem').show('');
-    var div = $('.drop');
-    div.animate({ left: '-450px' }, "100");
-});
-      //  $('.menuitem').click(function() {
-    
-    
-    // Add your menu toggle logic here
-  // });
-      // dropdown sub section for mobile creen and tablet screen
-      $('.dl1').click(function () {
-        // $('.drop').hide("slow");
-        var div2 = $('.dp1');
-        div2.animate({ width: 'toggle' }, "100");
-      })
-      $('.backbt').click(function(){
-        var div2 = $('.dp1');
-        div2.animate({ width: 'toggle' }, "100");
-        $('.drop').show("slow");
-      })
-
+      
 
     })
   </script>
