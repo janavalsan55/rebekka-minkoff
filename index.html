@@ -28,7 +28,8 @@
   <!-- navbar -->
 
   <div class="navbar">
-    <button class="menuitem"><i class="fa-solid fa-bars fa-xl"></i></button>
+    <button class="menuitem" ><i class="fa-solid fa-bars fa-xl"></i></button>
+    <button class=" menucross"><i class="fa-solid fa-x fa-xl"></i></button>
     <a href="" class="logo">REBECCA MINKOFF</a>
     <button class="menuitem2 "><i class="fa-solid fa-cart-shopping fa-xl"></i></button>
 
@@ -429,6 +430,24 @@
         var div = $('.drop');
         div.animate({ width: 'toggle' }, "100");
       })
+      $(".menuitem").click(function () {
+    $('.menuitem').hide('');
+    $('.menucross').show('');
+    var div = $('.drop');
+    div.animate({ left: '0px' }, "100");
+});
+    
+$(".menucross").click(function () {
+    $('.menucross').hide('');
+    $('.menuitem').show('');
+    var div = $('.drop');
+    div.animate({ left: '-450px' }, "100");
+});
+      //  $('.menuitem').click(function() {
+    
+    
+    // Add your menu toggle logic here
+  // });
       // dropdown sub section for mobile creen and tablet screen
       $('.dl1').click(function () {
         // $('.drop').hide("slow");

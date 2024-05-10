@@ -759,14 +759,18 @@
         align-items: center;
         justify-content: center;
       }
+      .menucross{
+        display: none;
+      }
       .drop{
         background-color: whitesmoke;
         display: flex;
         flex-direction: column;
         width: 100%;
         position: absolute;
+        left: -450px;
         height: 95vh;
-        display: none;
+        /* display: none; */
         z-index: 1;
       }
       .dlink{
