@@ -62,14 +62,14 @@
   </div>
   <!-- nav dropdown -->
   <div class="drop">
-    <div class="btndr"> <input type="text" placeholder="Search..."><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-      class="bi bi-search" viewBox="0 0 16 16">
-      <path
-        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
-    </svg></button>
-</div>
+    <div class="btndr"> <input type="text" placeholder="Search..."><button><svg xmlns="http://www.w3.org/2000/svg"
+          width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg></button>
+    </div>
     <div class="navlinksdrop">
-      <button class="dlink">NEW NOW <i class="fa-sharp fa-solid fa-angle-right"></i></button>
+      <button class="dlink dl1">NEW NOW <i class="fa-sharp fa-solid fa-angle-right"></i></button>
       <button class="dlink">HANDBAGS <i class="fa-sharp fa-solid fa-angle-right "></i></button>
       <button class="dlink">CLOTHINGS <i class="fa-sharp fa-solid fa-angle-right "></i></button>
       <button class="dlink">SHOES <i class="fa-sharp fa-solid fa-angle-right"></i></button>
@@ -80,14 +80,13 @@
       <button class="dlink">OUR STORY <i class="fa-sharp fa-solid fa-angle-right"></i></button>
     </div>
     <diiv class="bttndrop">
-      
-        <button class="currency" style="font-size: 14px; font-weight: bold;"><span class="cur">IN/₹</span></button>
-      
-       <button class="user"><span>ACCOUNT</span></button>
-      
-    </diiv>
-    </div>
 
+      <button class="currency" style="font-size: 14px; font-weight: bold;"><span class="cur">IN/₹</span></button>
+
+      <button class="user"><span>ACCOUNT</span></button>
+
+    </diiv>
+  </div>
   <!-- dropdowncurrency IN/₹-->
   <div class="dorpdowncurr">
     <span style="font-weight: bold;">CHOOSE COUNTRY & CURRENCY</span>
@@ -145,6 +144,7 @@
   </div>
   <!-- dropdown -->
   <div class="dp1">
+    <!-- <button class=" backbt"><i class="fa-sharp fa-solid fa-angle-left ">Back to menu</i></button> -->
     <div class="dropdown1" style="padding-top: 10px; padding-bottom: 10px;">
       <div class="newnow" style="margin-bottom: 40px ;">
         <p style="margin-bottom: 10px;font-weight: bold">NEW NOW</p>
@@ -167,12 +167,12 @@
       <div style="display: flex;align-items: center;justify-content: center;">
         <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
    font-size: 30px;">SPRING ESSENTIALS</a>
-        <img src="dpd1.jpeg" alt="" style="width: 400px; height: 330px;">
+        <img class="smalcrn-sizes1" src="dpd1.jpeg" alt="">
       </div>
       <div style="display: flex;align-items: center;justify-content: center; text-align: center;">
         <a href="" style="position: absolute;text-decoration: none;color: white;font-weight: 500;
    font-size: 30px;">FRESH SPRING <br> FITS</a>
-        <img src="1.jpg" alt="" style="width: 300px; height: 330px;">
+        <img class="smalcrn-sizes1" src="1.jpg" alt="">
       </div>
 
     </div>
@@ -425,10 +425,23 @@
         $('.userformsignup').hide("");
         $('.userformlogin').show("");
       })
-      $(".menuitem").click(function(){
-    var div = $('.drop');
-    div.animate({width: 'toggle'}, "100");
-});
+      $(".menuitem").click(function () {
+        var div = $('.drop');
+        div.animate({ width: 'toggle' }, "100");
+      })
+      // dropdown sub section for mobile creen and tablet screen
+      $('.dl1').click(function () {
+        // $('.drop').hide("slow");
+        var div2 = $('.dp1');
+        div2.animate({ width: 'toggle' }, "100");
+      })
+      $('.backbt').click(function(){
+        var div2 = $('.dp1');
+        div2.animate({ width: 'toggle' }, "100");
+        $('.drop').show("slow");
+      })
+
+
     })
   </script>
 </body>
