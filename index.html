@@ -17,6 +17,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="slider.js"></script>
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="catlog.html">
 </head>
 
 <body>
@@ -28,9 +29,9 @@
   <!-- navbar -->
 
   <div class="navbar">
-    <button class="menuitem" ><i class="fa-solid fa-bars fa-xl"></i></button>
+    <button type="button" class="menuitem"><i class="fa-solid fa-bars fa-xl"></i></button>
     <a href="" class="logo">REBECCA MINKOFF</a>
-    <button class="menuitem2 "><i class="fa-solid fa-cart-shopping fa-xl"></i></button>
+    <button type="button" class="menuitem2 "><i class="fa-solid fa-cart-shopping fa-xl"></i></button>
 
     <div class="navlinks">
       <a href="" class="link1">NEW NOW</a>
@@ -44,7 +45,7 @@
       <a href="">OUR STORY</a>
     </div>
     <diiv class="bttn" style="display: flex; flex-direction: row;gap: 20px;">
-      <div><button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      <div><button type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-search" viewBox="0 0 16 16">
             <path
               d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
@@ -53,7 +54,7 @@
       <div>
         <button class="currency" style="font-size: 14px; font-weight: bold;"><span class="cur">IN/₹</span></button>
       </div>
-      <div> <button class="user"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+      <div> <button type="button" class="user"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
             class="bi bi-person-fill" viewBox="0 0 16 16">
             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
           </svg></button>
@@ -62,28 +63,28 @@
   </div>
   <!-- nav dropdown -->
   <div class="drop">
-    <div class="btndr"> <input type="text" placeholder="Search..."><button><svg xmlns="http://www.w3.org/2000/svg"
+    <div class="btndr"> <input type="text" id="search"  placeholder="Search..."><button type="button"><svg xmlns="http://www.w3.org/2000/svg"
           width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
           <path
             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
         </svg></button>
     </div>
     <div class="navlinksdrop">
-      <button class="dlink dl1">NEW NOW <i class="fa-sharp fa-solid fa-angle-right"></i></button>
-      <button class="dlink">HANDBAGS <i class="fa-sharp fa-solid fa-angle-right "></i></button>
-      <button class="dlink">CLOTHINGS <i class="fa-sharp fa-solid fa-angle-right "></i></button>
-      <button class="dlink">SHOES <i class="fa-sharp fa-solid fa-angle-right"></i></button>
-      <button class="dlink">ACCESSORIES <i class="fa-sharp fa-solid fa-angle-right "></i></button>
-      <button class="dlink">FRAGRANCE </button>
-      <button class="dlink">HOME </i></button>
-      <button class="dlink">SALE <i class="fa-sharp fa-solid fa-angle-right "></i></button>
-      <button class="dlink">OUR STORY <i class="fa-sharp fa-solid fa-angle-right"></i></button>
+      <button type="button" class="dlink dl1">NEW NOW <i class="fa-sharp fa-solid fa-angle-right"></i></button>
+      <button type="button" class="dlink">HANDBAGS <i class="fa-sharp fa-solid fa-angle-right "></i></button>
+      <button type="button" class="dlink">CLOTHINGS <i class="fa-sharp fa-solid fa-angle-right "></i></button>
+      <button type="button" class="dlink">SHOES <i class="fa-sharp fa-solid fa-angle-right"></i></button>
+      <button type="button" class="dlink">ACCESSORIES <i class="fa-sharp fa-solid fa-angle-right "></i></button>
+      <button type="button" class="dlink">FRAGRANCE </button>
+      <button type="button" class="dlink">HOME </i></button>
+      <button type="button" class="dlink">SALE <i class="fa-sharp fa-solid fa-angle-right "></i></button>
+      <button type="button" class="dlink">OUR STORY <i class="fa-sharp fa-solid fa-angle-right"></i></button>
     </div>
     <diiv class="bttndrop">
 
-      <button class="currency" style="font-size: 14px; font-weight: bold;"><span class="cur">IN/₹</span></button>
+      <button type="button" class="currency" style="font-size: 14px; font-weight: bold;"><span class="cur">IN/₹</span></button>
 
-      <button class="user"><span>ACCOUNT</span></button>
+      <button type="button" class="user"><span>ACCOUNT</span></button>
 
     </diiv>
   </div>
@@ -94,52 +95,52 @@
       possible international shopping experience. Please
       select the country you would like to ship to and your currency below.</p>
 
-    <select class="currencySelector">
-      <option value="USD">United States Dollar (USD)</option>
-      <option value="EUR">Euro (EUR)</option>
-      <option value="GBP">British Pound Sterling (GBP)</option>
-      <option value="AUD">Australian Dollar (AUD)</option>
-      <option value="CAD">Canadian Dollar (CAD)</option>
-      <option value="JPY">Japanese Yen (JPY)</option>
-      <option value="CHF">Swiss Franc (CHF)</option>
-      <option value="CNY">Chinese Yuan (CNY)</option>
-      <option value="INR">Indian Rupee (INR)</option>
-      <option value="RUB">Russian Ruble (RUB)</option>
-      <option value="BRL">Brazilian Real (BRL)</option>
-      <option value="KRW">South Korean Won (KRW)</option>
-      <option value="MXN">Mexican Peso (MXN)</option>
-      <option value="TRY">Turkish Lira (TRY)</option>
-      <option value="NZD">New Zealand Dollar (NZD)</option>
-      <option value="SGD">Singapore Dollar (SGD)</option>
-      <option value="HKD">Hong Kong Dollar (HKD)</option>
-      <option value="SEK">Swedish Krona (SEK)</option>
-      <option value="NOK">Norwegian Krone (NOK)</option>
-      <option value="DKK">Danish Krone (DKK)</option>
-      <option value="ZAR">South African Rand (ZAR)</option>
-      <option value="THB">Thai Baht (THB)</option>
-      <option value="IDR">Indonesian Rupiah (IDR)</option>
+    <select class="currencySelector" id="currency-selector">
+      <option id="USD" value="USD">United States Dollar (USD)</option>
+      <option id="EUR" value="EUR">Euro (EUR)</option>
+      <option id="GBP" value="GBP">British Pound Sterling (GBP)</option>
+      <option id="AUD" value="AUD">Australian Dollar (AUD)</option>
+      <option id="CAD" value="CAD">Canadian Dollar (CAD)</option>
+      <option id="JPY" value="JPY">Japanese Yen (JPY)</option>
+      <option id="CHF" value="CHF">Swiss Franc (CHF)</option>
+      <option id="CNY" value="CNY">Chinese Yuan (CNY)</option>
+      <option id="INR" value="INR">Indian Rupee (INR)</option>
+      <option id="RUB" value="RUB">Russian Ruble (RUB)</option>
+      <option id="BRL" value="BRL">Brazilian Real (BRL)</option>
+      <option id="KRW" value="KRW">South Korean Won (KRW)</option>
+      <option id="MXN" value="MXN">Mexican Peso (MXN)</option>
+      <option id="TRY" value="TRY">Turkish Lira (TRY)</option>
+      <option id="NZD" value="NZD">New Zealand Dollar (NZD)</option>
+      <option id="SGD" value="SGD">Singapore Dollar (SGD)</option>
+      <option id="HKD" value="HKD">Hong Kong Dollar (HKD)</option>
+      <option id="SEK" value="SEK">Swedish Krona (SEK)</option>
+      <option id="NOK" value="NOK">Norwegian Krone (NOK)</option>
+      <option id="DKK" value="DKK">Danish Krone (DKK)</option>
+      <option id="ZAR" value="ZAR">South African Rand (ZAR)</option>
+      <option id="THB" value="THB">Thai Baht (THB)</option>
+      <option id="IDR" value="IDR">Indonesian Rupiah (IDR)</option>
     </select>
-    <button class="currencybtn">OK</button>
+    <button type="button" id="currencybtn" class="currencybtn">OK</button>
   </div>
   <!-- dropdown user-->
   <div class="dropdownuser">
     <span>MY ACCOUNT</span>
     <div class="btns">
-      <button class="loginbt">LOGIN</button>
-      <button class="create">CREATE ACCOUNT</button>
+      <button type="button" class="loginbt">LOGIN</button>
+      <button type="button" class="create">CREATE ACCOUNT</button>
     </div>
 
     <div class="userformlogin">
-      <input type="text" placeholder="Email address" style="margin-bottom: 30px;">
-      <input type="password" placeholder="Password">
-      <button class="loginuser">LOGIN</button>
+      <input type="text" name="email" autocomplete="additional-name" placeholder="Email address" style="margin-bottom: 30px;">
+      <input type="password" name="password" autocomplete="current-password" placeholder="Password">
+      <button type="button" class="loginuser">LOGIN</button>
     </div>
     <div class="userformsignup">
-      <input type="text" placeholder="First Name" style="margin-bottom: 30px;">
-      <input type="text" placeholder="Last Name" style="margin-bottom: 30px;">
-      <input type="text" placeholder="Email address" style="margin-bottom: 30px;">
-      <input type="password" placeholder="Password">
-      <button class="loginuser">CREATE ACCOUNT</button>
+      <input type="text" name="fname" autocomplete="additional-name" placeholder="First Name" style="margin-bottom: 30px;">
+      <input type="text" name="fname" autocomplete="family-name" placeholder="Last Name" style="margin-bottom: 30px;">
+      <input type="text" name="email" autocomplete="email" placeholder="Email address" style="margin-bottom: 30px;">
+      <input type="password" name="password" autocomplete="new-password" placeholder="Password">
+      <button type="button" class="loginuser">CREATE ACCOUNT</button>
     </div>
   </div>
   <!-- dropdown -->
@@ -327,15 +328,15 @@
   <!-- banner1 -->
   <div class="collections">
     <div class="col"><a href="" class="linkcol">CLOTHING</a>
-      <img src="1.jpg" alt="" class="collimg">
+      <img src="1.jpg" alt="" class="img">
     </div>
 
     <div class="col"><a href="" class="linkcol">HANDBAGS</a>
-      <img src="2.jpg" alt="" class="collimg">
+      <img src="2.jpg" alt="" class="img">
     </div>
 
     <div class="col"><a href="" class="linkcol">SHOES</a>
-      <img src="3.jpg" alt="" class="collimg">
+      <img src="3.jpg" alt="" class="img">
     </div>
   </div>
   <!-- banner1 collections slider -->
@@ -379,25 +380,70 @@
     </div>
   </div>
   <!-- footer -->
-  <footer>
-  <div class="container ftr">
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 rpw cols-lg-5 row-cols-xl-5 row-cols-xxl-5">
-      <div class="col-12">
-        <div class="first">
-        <a href="" style="color: white; text-decoration: none; font-size: 20px; letter-spacing: 2px; ">REBECCA MINKOFF</a>
-        
-          <a href="" class="atag" style="margin-top: 10px;" >
-            Sign up for emails & 15%0ff <i class="fa-solid fa-angle-right"></i></a>
-          
+  <!-- <footer>
+    <div class="container ftr">
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 rpw cols-lg-5 row-cols-xl-5 row-cols-xxl-5">
+        <div class="col-12">
+          <div class="first">
+            <a href="" style="color: white; text-decoration: none; font-size: 20px; letter-spacing: 2px; ">REBECCA
+              MINKOFF</a>
+
+            <a href="" class="atag" style="margin-top: 10px;">
+              Sign up for emails & 15%0ff <i class="fa-solid fa-angle-right"></i></a>
+
+          </div>
         </div>
-    </div>
-      <div class="col">
+        <div class="col">
           <div class="sections">
             <a href="" class="atag" style="font-weight: bold;">THE COMPANY</a>
             <a href="" class="atag"> Our styory</a>
           </div>
+        </div>
+        <div class="col">
+          <div class="sections">
+            <a href="" class="atag" style="font-weight: bold;">JOIN RM</a>
+            <a href="" class="atag"> Text us</a>
+            <a href="" class="atag">RM Rewards</a>
+            <a href="" class="atag">Gift cards</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="sections">
+            <a href="" class="atag" style="font-weight: bold;">CUSTOMER CARE</a>
+            <a href="" class="atag"> Shipping</a>
+            <a href="" class="atag">Return & Exchanges</a>
+            <a href="" class="atag">Contact us</a>
+            <a href="" class="atag">FAQ</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="sections">
+            <a href="" class="atag" style="font-weight: bold;">LEGAL</a>
+            <a href="" class="atag"> Privacy policy</a>
+            <a href="" class="atag">Supply chain disclosure</a>
+            <a href="" class="atag">Terms & conditions</a>
+          </div>
+        </div>
       </div>
-      <div class="col">
+    </div>
+  </footer> -->
+
+  <footer>
+    <div class="footer">
+      <div class="fooetrcntntt">
+        <div class="sections">
+            <a href="" style="color: white; text-decoration: none; font-size: 20px; letter-spacing: 2px; ">REBECCAMINKOFF</a>
+            <a href="" class="atag" style="margin-top: 10px;">
+              Sign up for emails & 15%0ff <i class="fa-solid fa-angle-right"></i></a>
+          </div>
+      </div>
+      <div class="fooetrcntntt">
+        <div class="sections">
+          <a href="" class="atag" style="font-weight: bold;">THE COMPANY</a>
+          <a href="" class="atag"> Our styory</a>
+        </div>
+      </div>
+      <div class="fooetrcntntt">
         <div class="sections">
           <a href="" class="atag" style="font-weight: bold;">JOIN RM</a>
           <a href="" class="atag"> Text us</a>
@@ -405,7 +451,7 @@
           <a href="" class="atag">Gift cards</a>
         </div>
       </div>
-      <div class="col">
+      <div class="fooetrcntntt">
         <div class="sections">
           <a href="" class="atag" style="font-weight: bold;">CUSTOMER CARE</a>
           <a href="" class="atag"> Shipping</a>
@@ -414,7 +460,7 @@
           <a href="" class="atag">FAQ</a>
         </div>
       </div>
-      <div class="col">
+      <div class="fooetrcntntt">
         <div class="sections">
           <a href="" class="atag" style="font-weight: bold;">LEGAL</a>
           <a href="" class="atag"> Privacy policy</a>
@@ -423,14 +469,7 @@
         </div>
       </div>
     </div>
-  </div>
-</footer>
-  <script>
-    $(document).ready(function () {
-      
-
-    })
-  </script>
+  </footer>
 </body>
 
 </html>
