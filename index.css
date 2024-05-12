@@ -535,12 +535,13 @@
           justify-content: center;
           text-align: center;
           align-items: center;
+          overflow: hidden;
 
       }
 
       .smvideo {
           width: 100%;
-          height: 100%;
+          height: auto;
           z-index: -1;
 
       }
@@ -571,9 +572,8 @@
           display: flex;
           flex-direction: row;
       }
-
-      .collimg {
-          height: 400px;
+      .img {
+          height: 100%;
           width: 335px;
       }
 
@@ -597,6 +597,7 @@
           width: 37%;
           position: absolute;
           height: 95vh;
+          left: -450px;
           /* display: none; */
           z-index: 1;
       }
@@ -719,12 +720,13 @@
           justify-content: center;
           text-align: center;
           align-items: center;
+          overflow: hidden;
 
       }
 
       .mbvideo {
           max-width: 100%;
-          height: 62vh;
+          height: auto;
           z-index: -1;
 
       }
@@ -845,9 +847,7 @@
           justify-content: center;
       }
 
-      .menucross {
-          display: none;
-      }
+    
 
       .drop {
           background-color: whitesmoke;
