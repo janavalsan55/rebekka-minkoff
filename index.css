@@ -90,27 +90,28 @@
 
   .bttn {
       margin-right: 20px;
+      display: flex; 
+      flex-direction: row;
+      gap: 20px;
   }
 
-  /* banner */
   .banner {
-      width: 100%;
-      height: 638px;
+    width: 100%;
+    position: relative;
+  }
+
+  .video {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden; 
   }
 
   .video video {
-      width: 100%;
-      z-index: -1;
-
+    position: absolute;
+    width: 100%; 
+    height: auto;
   }
-
-  .linkvideo {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-      font-size: 30px;
-  }
-/* banner */
   /* collections */
   .collections {
     display: flex;
@@ -121,14 +122,14 @@
 
 .col {
     position: relative;
-    height: 490px; /* Adding position relative for absolute positioning */
+    height: 70vh; 
+    flex-basis: calc(33.33% );
 
 }
 
 .img {
-    position: relative;
-    height: 489px;
-    width: 421px;
+    height: 70vh;
+    width: 100%;
     z-index: -1;
     
 }
@@ -146,7 +147,7 @@
 }
   .banner2 {
       width: 100%;
-      height: 140vh;
+      height: 90vh;
       background-image: url(b2.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -176,7 +177,7 @@
 
   .banner3 {
       width: 100%;
-      height: 140vh;
+      height: 90vh;
       background-image: url(b3.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -387,54 +388,6 @@
       font-weight: bold;
   }
 
-  /* footer {
-      background-color: black;
-      width: 100%;
-      height: 300px;
-  }
-
-  .ftr {
-      background-color: black;
-      color: white;
-      height: 300px;
-      width: 100%;
-      align-items: center;
-      padding-top: 80px;
-      padding-bottom: 80px;
-
-  }
-
-  .first {
-      display: grid;
-      padding: 0;
-      margin: 0;
-      width: 100%;
-  }
-
-  .sections {
-      display: grid;
-      padding: 0;
-      margin: 0;
-      width: 150px;
-  }
-
-  .col {
-      padding: 0;
-      margin: 0;
-      align-items: start;
-  }
-
-  .col-12 {
-      padding: 0;
-      margin: 0;
-      align-items: start;
-      text-align: start;
-  }
-
-  .atag {
-      text-decoration: none;
-      color: white;
-  } */
   .footer{
     background-color: black;
     display: flex;
@@ -568,14 +521,17 @@
           text-decoration: underline;
       }
 
-      .collections {
-          display: flex;
-          flex-direction: row;
+      .col{
+        flex-basis: calc(33.33% );
+        height: 40vh;
       }
-      .img {
-          height: 100%;
-          width: 335px;
-      }
+    
+    .img {
+        height: 40vh;
+        width: 100%;
+        z-index: -1;
+        
+    }
 
       .banner2 {
           max-width: 100%;
@@ -586,10 +542,6 @@
           max-width: 100%;
           height: 750px;
       }
-
-      /* .drop{
-        display: block;
-      } */
       .drop {
           background-color: whitesmoke;
           display: flex;
@@ -856,7 +808,8 @@
           width: 100%;
           position: absolute;
           left: -450px;
-          height: 95vh;
+          height: 70vh;
+          overflow: scroll;
           /* display: none; */
           z-index: 1;
       }
