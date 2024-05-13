@@ -2,6 +2,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      font-family: 'Futura', sans-serif;
   }
 
   /* announcment */
@@ -56,6 +57,7 @@
       background-color: white;
       position: sticky;
       top: 0;
+      z-index: 1000;
   }
 
   .logo {
@@ -238,11 +240,20 @@
       height: 350px;
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
-
-
+      /* justify-content: space-evenly; */
+      justify-content: center;
+      gap: 4rem;
   }
-
+.dropsec1-1{
+    display: flex;
+    flex-direction: row;
+    gap:8rem;
+}
+.dropsec1-2{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
   .dropdown1 li {
       list-style: none;
       margin-bottom: 5px;
@@ -266,19 +277,70 @@
       background-color: white;
       width: 100%;
   }
-
+  .dropsec2-1{
+    display: flex;
+    flex-direction: row;
+    gap:4rem;
+}
+.dropsec2-2{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
   .dp3 {
       display: none;
       background-color: white;
       width: 100%;
   }
+  .dropdown4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+.dropdown4 li {
+    list-style: none;
+    margin-bottom: 5px;
+}
 
+.dropdown4 a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
   .dp4 {
       display: none;
       background-color: white;
       width: 100%;
   }
+.dropdown5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+.dropdown5 li {
+    list-style: none;
+    margin-bottom: 5px;
+}
 
+.dropdown5 a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+.dropsec5-1{
+    display: flex;
+    flex-direction: row;
+    gap:4rem;
+}
+.dropsec5-2{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
   .dp5 {
       display: none;
       background-color: white;
@@ -295,7 +357,8 @@
       height: 350px;
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: center;
+      gap: 40px;
 
   }
 
@@ -477,6 +540,11 @@
       display: flex;
       flex-direction: row;
       gap: 10px;
+  }
+  .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   /* responsive mobile */
