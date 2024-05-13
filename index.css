@@ -393,6 +393,7 @@
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-evenly;
+    gap: 8px;
     width: 100%;
     height: auto;
     padding-bottom: 60px;
@@ -406,7 +407,38 @@
 .sections{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
+.input{
+    background: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    width: 190px;
+    
+}
+.input::placeholder {
+    color: white;
+    font-size: 10px;
+
+  }
+  #inp{
+    background: none;
+    border: none;
+    outline: none;
+  }
+  .sections form{
+    border-bottom: 1px solid white;
+  }
+  .social li{
+    list-style: none;
+  }
+  .social{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
   /* responsive mobile */
   @media only screen and (max-width: 1024px) {
       .announcment {
