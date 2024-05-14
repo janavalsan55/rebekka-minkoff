@@ -56,4 +56,11 @@ $(document).ready(function () {
       left: div.css('left') === '0px' ? '-450px' : '0px'
     }, "");
   });
+  // product card slider
+  // $('.img').slick({
+  //   slidesToShow: 1.1,
+  //   slidesToScroll: 1,
+  //   infinite: false,
+  //   dots:true,
+  // });
 })
